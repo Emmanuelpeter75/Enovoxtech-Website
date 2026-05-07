@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | E-NovoxTech</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header>
+    <div class="logo">
+        <a href="index.html"><img src="enovoxtechlogo.png" alt="Logo"></a>
+    </div>
+
+    <nav class="desktop-nav">
+        <a href="index.html">Home</a>
+        <a href="#About">About</a>
+        <a href="#projects">Project</a>
+        <a href="blog.html">Blog</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+        <a href="#" class="ai-status-btn">Enovox AI <span class="status-dot"></span></a>
+        
+        <button id="theme-btn" class="theme-toggle">
+            <i class="fa-solid fa-moon" id="theme-icon"></i>
+        </button>
+
+        <div class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+</header>
+
+    <div class="mobile-nav-overlay" id="mobile-nav">
+        <div class="close-btn" id="close-btn">&times;</div>
+        <div class="mobile-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="#About" class="nav-link">About</a>
+            <a href="#projects" class="nav-link">Project</a>
+            <a href="blog.html" class="nav-link">Blog</a>
+            <a href="faq.html" class="nav-link">FAQ</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+    </div>
+
+    <section class="error-page-section">
+        <div class="error-container reveal">
+            <h1 class="glitch-text" data-text="404">404</h1>
+            <h2>System Anomaly Detected</h2>
+            <p>Our predictive models couldn't find the data you're looking for. You may have ventured into uncharted territory.</p>
+            <a href="index.html" class="error-btn"><i class="fa-solid fa-house"></i> Return to Base</a>
+        </div>
+    </section>
+     <div id="coming-soon-toast" class="toast-hidden">
+    <div class="toast-content">
+        <i class="fa-solid fa-sparkles"></i>
+        <span>This Feature is Coming soon!</span>
+    </div>
+</div>
+    <script src="theme.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

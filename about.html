@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | E-NovoxTech</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        if (localStorage.getItem('theme') === 'dark') {
+            document.documentElement.classList.add('dark-mode');
+        }
+    </script>
+    
+    <style>
+        /* About Page Specific Styles */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: start;
+            margin-bottom: 60px;
+        }
+        .about-text h2 {
+            color: var(--accent-color);
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+        .about-text p {
+            color: var(--text-muted, #888);
+            line-height: 1.8;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+        
+        /* Values Grid */
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .value-card {
+            background-color: var(--bg-color);
+            border: 1px solid var(--border-color);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); /* Matches your project cards */
+        }
+        .value-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-color);
+        }
+        .value-card i {
+            font-size: 2.5rem;
+            color: var(--accent-color);
+            margin-bottom: 20px;
+        }
+        .value-card h3 {
+            margin-bottom: 15px;
+            color: var(--text-color);
+        }
+        .value-card p {
+            color: var(--text-muted, #888);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        /* --- MOBILE STACKING FOR ABOUT PAGE --- */
+@media (max-width: 768px) {
+    .about-grid {
+        grid-template-columns: 1fr !important; /* Forces a single column */
+        gap: 30px !important; /* Slightly reduces the gap between text blocks on phones */
+    }
+}
+
+        @media (max-width: 900px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+        <a href="index.html"><img src="enovoxtechlogo.png" alt="Logo"></a>
+    </div>
+
+    <nav class="desktop-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="project.html">Project</a>
+        <a href="blog.html">Blog</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+        <a href="#" class="ai-status-btn">Enovox AI <span class="status-dot"></span></a>
+        
+        <button id="theme-btn" class="theme-toggle">
+            <i class="fa-solid fa-moon" id="theme-icon"></i>
+        </button>
+
+        <div class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+</header>
+
+    <div class="mobile-nav-overlay" id="mobile-nav">
+        <div class="close-btn" id="close-btn">&times;</div>
+        <div class="mobile-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="project.html" class="nav-link">Project</a>
+            <a href="blog.html" class="nav-link">Blog</a>
+            <a href="faq.html" class="nav-link">FAQ</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+    </div>
+
+    
+
+    <section class="blog-header-section" style="text-align: center; padding-top: 60px;">
+        <p style="text-transform: uppercase; letter-spacing: 2px; color: var(--accent-color); font-weight: bold; text-align: center;">Who We Are</p>
+        <h1>Driven by Purpose. Powered by AI.</h1>
+        <p style="max-width: 700px; margin: 10px auto; color: #888;">We are building the next generation of intelligent systems to solve real-world problems and empower the African tech ecosystem.</p>
+    </section>
+
+    <section class="section-padding" style="max-width: 1200px; margin: 0 auto; padding-left: 20px; padding-right: 20px;">
+        
+        <div class="about-grid">
+            <div class="about-text">
+                <h2>The Visionary Builder</h2>
+                <p>E-NovoxTech was founded by Emmanuel Peter (Emmytoonz), a dynamic technical leader, Shopify developer, and aspiring data scientist. Driven by a deep passion for machine learning, the goal was simple: bridge the gap between complex algorithms and practical business solutions.</p>
+                <p>We do not just write code; we build scalable, cinematic, and highly efficient architectures. Whether it is predicting insurance claims, forecasting churn, or designing ultra-realistic front-end web environments, our focus is always on tangible impact and relentless growth.</p>
+            </div>
+            
+            <div class="about-text">
+                <h2>Our Mission for Africa</h2>
+                <p>The future of technology is global, but its deepest impact will be local. E-NovoxTech is positioned to be a catalyst for technological advancement across Africa.</p>
+                <p>By mentoring young developers, engineering smart automation tools, and deploying custom AI systems like the Enovox Intelligence Core, we are equipping businesses to scale faster, make data-driven decisions, and compete on the global stage.</p>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 80px;">
+            <h2>Our Core Principles</h2>
+            <div class="values-grid">
+                
+                <div class="value-card">
+                    <i class="fa-solid fa-cross"></i>
+                    <h3>Faith & Integrity</h3>
+                    <p>Built on strong Christian values, we believe in operating with absolute honesty, purpose, and a commitment to creating technology that serves and positively impacts lives.</p>
+                </div>
+
+                <div class="value-card">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h3>Growth Mindset</h3>
+                    <p>In a rapidly evolving AI landscape, complacency is the enemy. We prioritize continuous learning, diligence, and the persistence to push beyond our current limits.</p>
+                </div>
+
+                <div class="value-card">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h3>Applied Innovation</h3>
+                    <p>Theory is good, but execution is better. We focus on "Applied AI"—building practical, deployable systems using Python, Machine Learning, and seamless web integrations.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <section id="footer">
+        <footer class="site-footer">
+            <div class="footer-container">
+                <div class="footer-brand">
+                    <h2>E-NovoxTech</h2> 
+                    <p>Building the Future of AI in Africa</p>
+                    <div class="social-icons">
+                        <a href="mailto:info@enovoxtech.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="https://x.com/enovoxtech" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.instagram.com/enovoxtech/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://web.facebook.com/profile.php?id=61577479170693" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://whatsapp.com/channel/0029Vb7dvNkInlqH4pUI6J39" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://github.com/Emmanuelpeter75" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links-group">
+                    <div class="footer-column">
+                        <div class="footer-column">
+    <h3>Company</h3>
+    <a href="index.html#About">About Us</a>
+    <a href="index.html#join-mission">Careers</a>
+    <a href="contact.html">Reach Out</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms & Conditions</a>
+</div>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Resources</h3>
+                        <a href="https://whatsapp.com/channel/0029Vb7dvNkInlqH4pUI6J39">Community</a>
+                        <a href="blog.html">Blog & Insights</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 E-NovoxTech. All rights reserved.
+            </div>
+        </footer>
+    </section>
+
+    <a href="https://whatsapp.com/channel/0029Vb7dvNkInlqH4pUI6J39" target="_blank" class="whatsapp-float" aria-label="Join our WhatsApp Channel">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <div id="coming-soon-toast" class="toast-hidden">
+    <div class="toast-content">
+        <i class="fa-solid fa-sparkles"></i>
+        <span>This Feature is Coming soon!</span>
+    </div>
+</div>
+
+
+    <a href="https://whatsapp.com/channel/0029Vb7dvNkInlqH4pUI6J39" target="_blank" class="whatsapp-float" aria-label="Join our WhatsApp Channel">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <div id="enovox-ai-container">
+        <div id="enovox-window">
+            <div class="enovox-header">
+                <div class="enovox-brand">
+                    <div class="pulse-icon"></div>
+                    <div>
+                        <strong>E-Novox Assistant</strong>
+                        <p>Intelligence Core</p>
+                    </div>
+                </div>
+                <div class="enovox-actions">
+                    <button id="enovox-full-mode" title="Open Full Screen">
+                        <i id="expand-icon" class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </button>
+                    <button id="enovox-close" title="Minimize">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div id="enovox-messages">
+                <div class="msg bot">Greetings. I am the ENovox AI. Would you like to know more about our founder, our values, or our mission in Africa?</div>
+            </div>
+
+            <div class="enovox-input-bar">
+                <input type="text" id="enovox-input" placeholder="Type a message..." autocomplete="off">
+                <button id="enovox-send">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+
+        <button id="enovox-launcher">
+            <i class="fa-solid fa-robot"></i>
+            <span>Chat with E-Novox Assistant</span>
+        </button>
+    </div>
+
+    <script src="theme.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

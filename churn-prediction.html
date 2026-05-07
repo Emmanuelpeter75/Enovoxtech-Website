@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study - E-NovoxTech</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="canonical" href="https://enovoxtech.com/churn-prediction.html" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+     <header>
+    <div class="logo">
+        <a href="index.html"><img src="enovoxtechlogo.png" alt="Logo"></a>
+    </div>
+
+    <nav class="desktop-nav">
+        <a href="index.html">Home</a>
+        <a href="#About">About</a>
+        <a href="#projects">Project</a>
+        <a href="blog.html">Blog</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+        <a href="#" class="ai-status-btn">Enovox AI <span class="status-dot"></span></a>
+        
+        <button id="theme-btn" class="theme-toggle">
+            <i class="fa-solid fa-moon" id="theme-icon"></i>
+        </button>
+
+        <div class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+</header>
+
+
+    <div class="mobile-nav-overlay" id="mobile-nav">
+        <div class="close-btn" id="close-btn">&times;</div>
+        <div class="mobile-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="index.html#About" class="nav-link">About</a>
+            <a href="index.html#projects" class="nav-link">Project</a>
+            <a href="blog.html" class="nav-link">Blog</a>
+            <a href="faq.html" class="nav-link">FAQ</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+    </div>
+
+    <section class="article-hero reveal">
+        <div class="article-meta">
+            <span class="category-tag">Machine Learning</span>
+            <span class="date-tag">March 2026</span>
+        </div>
+        <h1>Predicting Customer Churn: A Data-Driven Approach</h1>
+        <p class="article-subtitle">How we built a predictive model to identify at-risk customers and improve retention strategies.</p>
+        
+        <div class="article-hero-image">
+            <img src="customer_Churn.png" alt="Machine Learning Churn Prediction" loading="lazy">
+        </div>
+    </section>
+
+    <main class="article-body reveal">
+        
+        <h2>The Challenge</h2>
+        <p>Customer churn is one of the most expensive problems a business can face. Acquiring a new customer costs significantly more than retaining an existing one. The challenge was to move from a reactive strategy to a proactive one by identifying which customers were likely to leave before they actually did.</p>
+
+        <h2>Our Approach</h2>
+        <p>We utilized a robust dataset to train a predictive model. By analyzing historical behavioral patterns, usage frequency, and engagement metrics, we could identify the early warning signs of churn.</p>
+        
+        <blockquote class="article-quote">
+            "By transitioning from reactive customer service to proactive data analysis, we can intercept churn before it impacts the bottom line."
+        </blockquote>
+
+        <h2>The Tech Stack & Implementation</h2>
+        <p>The core of this solution was built using Python. We handled data preprocessing and feature engineering to ensure the model received clean, highly relevant data.</p>
+        
+        <div class="code-block-wrapper">
+            <div class="code-header">
+                <span>python</span>
+                <span>model_training.py</span>
+            </div>
+            <pre><code class="language-python">
+# Example Model Training snippet
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import train_test_split
+
+# Split data and initialize model
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+rf_model = RandomForestClassifier(n_estimators=100, random_state=42)
+
+# Train the predictive model
+rf_model.fit(X_train, y_train)
+            </code></pre>
+        </div>
+
+        <h2>The Results</h2>
+        <p>The deployed model successfully flagged at-risk accounts with a high degree of accuracy, allowing intervention teams to offer targeted solutions, ultimately stabilizing the user base.</p>
+
+    </main>
+
+    <div class="back-nav reveal">
+        <a href="blog.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Back to Insights</a>
+    </div>
+
+     <section id="footer">
+        <footer class="site-footer">
+            <div class="footer-container">
+                <div class="footer-brand">
+                    <h2>E-NovoxTech</h2> 
+                    <p>Building the Future of AI in Africa</p>
+                    <div class="social-icons">
+                        <a href="mailto:info@enovoxtech.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="https://x.com/enovoxtech" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.instagram.com/enovoxtech/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://web.facebook.com/profile.php?id=61577479170693" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://whatsapp.com/channel/0029Vb7dvNkInlqH4pUI6J39" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://github.com/Emmanuelpeter75" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links-group">
+                    <div class="footer-column">
+                        <div class="footer-column">
+    <h3>Company</h3>
+    <a href="index.html#About">About Us</a>
+    <a href="index.html#join-mission">Careers</a>
+    <a href="contact.html">Reach Out</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms & Conditions</a>
+</div>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Resources</h3>
+                        <a href="https://whatsapp.com/channel/0029Vb7dvNkInlqH4pUI6J39">Community</a>
+                        <a href="blog.html">Blog & Insights</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 E-NovoxTech. All rights reserved.
+            </div>
+        </footer>
+    </section>
+    <a href="https://whatsapp.com/channel/0029Vb7dvNkInlqH4pUI6J39" target="_blank" class="whatsapp-float" aria-label="Join our WhatsApp Channel">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+     <div id="coming-soon-toast" class="toast-hidden">
+    <div class="toast-content">
+        <i class="fa-solid fa-sparkles"></i>
+        <span>This Feature is Coming soon!</span>
+    </div>
+</div>
+
+<div id="enovox-ai-container">
+    <div id="enovox-window">
+        <div class="enovox-header">
+    <div class="enovox-brand">
+        <div class="pulse-icon"></div>
+        <div>
+            <strong>Enovox Assistant</strong>
+            <p>Intelligence Core</p>
+        </div>
+    </div>
+    <div class="enovox-actions">
+        <button id="enovox-full-mode" title="Open Full Screen">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </button>
+        <button id="enovox-close" title="Minimize">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+</div>
+        
+        <div id="enovox-messages">
+            <div class="msg bot">Greetings. I am Enovox AI, the digital pulse of E-NovoxTech. How can I assist you with our vision today?</div>
+        </div>
+
+        <div class="enovox-input-bar">
+            <input type="text" id="enovox-input" placeholder="Type a message..." autocomplete="off">
+            <button id="enovox-send">
+                <i class="fa-solid fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+    <button id="enovox-launcher">
+        <i class="fa-solid fa-robot"></i>
+        <span>Chat with our Assistant</span>
+    </button>
+</div>
+
+
+
+    <script src="theme.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

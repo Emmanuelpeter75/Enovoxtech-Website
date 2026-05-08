@@ -31,40 +31,44 @@
 <body>
 
     <header>
-        <div class="logo">
-            <a href="index.html"><img src="enovoxtechlogo.png" alt="E-NovoxTech logo"></a>
-        </div>
-        
-        <nav class="desktop-nav">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="project.html">Project</a>
-            <a href="blog.html">Blog</a>
-            <a href="faq.html" class="active">FAQ</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-        
-        <div class="header-actions">
-            <a href="index.html" class="ai-status-btn">Enovox AI <span class="status-dot"></span></a>
-            
-            <button id="theme-btn" class="theme-toggle" aria-label="Toggle Dark Mode">
-                <i class="fa-solid fa-moon" id="theme-icon"></i>
-            </button>
-            
-            <div class="hamburger" id="hamburger-menu">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </div>
-    </header>
+    <div class="logo">
+        <a href="index.html"><img src="enovoxtechlogo.png" alt="Logo"></a>
+    </div>
 
-    <div class="mobile-menu" id="mobile-menu">
+    <nav class="desktop-nav">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="project.html">Project</a>
         <a href="blog.html">Blog</a>
         <a href="faq.html">FAQ</a>
         <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+        <a href="#" class="ai-status-btn">Enovox AI <span class="status-dot"></span></a>
+        
+        <button id="theme-btn" class="theme-toggle">
+            <i class="fa-solid fa-moon" id="theme-icon"></i>
+        </button>
+
+        <div class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
     </div>
+</header>
+
+    <div class="mobile-nav-overlay" id="mobile-nav">
+        <div class="close-btn" id="close-btn">&times;</div>
+        <div class="mobile-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="project.html" class="nav-link">Project</a>
+            <a href="blog.html" class="nav-link">Blog</a>
+            <a href="faq.html" class="nav-link">FAQ</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+    </div>
+
 
     <section class="blog-header-section">
         <p style="text-transform: uppercase; letter-spacing: 2px; color: var(--accent-color); font-weight: bold; text-align: center;">Support</p>
@@ -155,16 +159,49 @@
             <div class="faq-item">
                 <button class="faq-question">How can I join the team? <i class="fa-solid fa-plus"></i></button>
                 <div class="faq-answer">
-                    <p>We are always looking for passionate developers, data scientists, and creative thinkers. While we may not have open roles listed today, you can send your portfolio through our contact form for future consideration.</p>
+                    <p>We are always looking for passionate developers, data scientists, and creative thinkers. While we may not have open roles listed today, you can send your portfolio through our <a href="contact.html" style="text-decoration: underline; color: var(--accent-color); font-weight: 600;">contact form</a> for future consideration.</p>
                 </div>
             </div>
 
         </div>
     </section>
     
-    <footer style="text-align: center; padding: 20px; border-top: 1px solid var(--border-color); margin-top: 40px;">
-        <p>&copy; 2026 E-NovoxTech. All rights reserved.</p>
-    </footer>
+    <section id="footer">
+        <footer class="site-footer">
+            <div class="footer-container">
+                <div class="footer-brand">
+                    <h2>E-NovoxTech</h2>
+                    <p>Building the Future of AI in Africa</p>
+                    <div class="social-icons">
+                        <a href="mailto:info@enovoxtech.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="https://x.com/enovoxtech" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.instagram.com/enovoxtech/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://web.facebook.com/profile.php?id=61577479170693" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://whatsapp.com/channel/0029Vb7dvNkInlqH4pUI6J39" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://github.com/Emmanuelpeter75" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links-group">
+                    <div class="footer-column">
+                        <h3>Company</h3>
+                        <a href="about.html">About Us</a>
+                        <a href="index.html#join-mission">Careers</a>
+                        <a href="contact.html">Reach Out</a>
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms & Conditions</a>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Resources</h3>
+                        <a href="https://whatsapp.com/channel/0029Vb7dvNkInlqH4pUI6J39">Community</a>
+                        <a href="blog.html">Blog & Insights</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 E-NovoxTech. All rights reserved.
+            </div>
+        </footer>
+    </section>
 
     <a href="https://whatsapp.com/channel/0029Vb7dvNkInlqH4pUI6J39" target="_blank" class="whatsapp-float" aria-label="Join our WhatsApp Channel">
         <i class="fa-brands fa-whatsapp"></i>

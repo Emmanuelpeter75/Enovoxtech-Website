@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | E-NovoxTech</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        if (localStorage.getItem('theme') === 'dark') {
+            document.documentElement.classList.add('dark-mode');
+        }
+    </script>
+    
+    <style>
+        /* Updated Case Grid Styles to match your snippet */
+        .case-studies-section {
+            margin-top: 40px;
+        }
+        .case-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 2fr); /* Forces exactly 3 columns */
+            gap: 30px;
+            margin-top: 40px;
+            max-width: 1700px; /* Widens the container so they fit */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Makes sure they still stack perfectly on mobile */
+        @media (max-width: 900px) {
+            .case-grid {
+                grid-template-columns: 1fr; /* 1 column on small screens */
+                text-align: left;
+            }
+            .case-card h3 {
+                text-align: left;
+            }
+        }
+       .case-card {
+            background-color: var(--bg-color);
+            border: 1px solid var(--border-color);
+            border-radius: 15px;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            /* NEW: Soft drop shadow to lift the card in light mode */
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+        }
+        .case-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--accent-color);
+            box-shadow: 0 15px 30px rgba(0, 212, 255, 0.15);
+        }
+        .case-metric {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--accent-color);
+            opacity: 0.8;
+            line-height: 1;
+        }
+        .case-card h3 {
+            font-size: 1.4rem;
+            color: var(--text-color);
+            margin: 0;
+        }
+        .case-card p {
+            color: var(--text-muted, #888);
+            line-height: 1.6;
+            margin: 0;
+        }
+        .case-link {
+            text-decoration: none;
+            color: var(--accent-color);
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: auto;
+            cursor: pointer;
+        }
+        .case-link i {
+            transition: transform 0.3s ease;
+        }
+        .case-link:hover i {
+            transform: translateX(5px);
+        }
+
+        /* Logic for "Coming Soon" on Enovox Card */
+        .coming-soon-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: var(--accent-color);
+            color: #000;
+            font-size: 0.7rem;
+            font-weight: 800;
+            padding: 4px 8px;
+            border-radius: 4px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+     <header>
+    <div class="logo">
+        <a href="index.html"><img src="enovoxtechlogo.png" alt="Logo"></a>
+    </div>
+
+    <nav class="desktop-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="project.html">Project</a>
+        <a href="blog.html">Blog</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+        <a href="#" class="ai-status-btn">Enovox AI <span class="status-dot"></span></a>
+        
+        <button id="theme-btn" class="theme-toggle">
+            <i class="fa-solid fa-moon" id="theme-icon"></i>
+        </button>
+
+        <div class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+</header>
+
+    <div class="mobile-nav-overlay" id="mobile-nav">
+        <div class="close-btn" id="close-btn">&times;</div>
+        <div class="mobile-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="project.html" class="nav-link">Project</a>
+            <a href="blog.html" class="nav-link">Blog</a>
+            <a href="faq.html" class="nav-link">FAQ</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+    </div>
+
+
+    <section class="blog-header-section" style="text-align: center; padding-top: 60px;">
+        <p style="text-transform: uppercase; letter-spacing: 2px; color: var(--accent-color); font-weight: bold;">Our Work</p>
+        <h1>Applied AI Impact</h1>
+        <p style="max-width: 700px; margin: 10px auto; color: #888;">Real data. Real results. How our models drive business value across emerging markets.</p>
+    </section>
+
+    <section id="projects" class="case-studies-section section-padding">
+       <div class="case-grid">
+                
+                <div class="case-card">
+                    <div class="case-metric">24%</div>
+                    <h3>Churn Prediction Model</h3>
+                    <p>Identifying at-risk customers before they leave using advanced behavioral data analysis and machine learning.</p>
+                    <a href="churn-prediction.html" class="case-link">Read the Case Study <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="case-card">
+                    <div class="case-metric">Faster</div>
+                    <h3>Insurance Claim Automation</h3>
+                    <p>Building predictive models to streamline insurance claims, reducing manual review time and improving accuracy.</p>
+                    <a href="insurance-claims.html" class="case-link">Read the Case Study <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="case-card">
+                    <div class="coming-soon-badge">R&D</div>
+                    <div class="case-metric">Proprietary</div>
+                    <h3>Enovox AI Core</h3>
+                    <p>Our flagship intelligent agent designed to automate cross-platform workflows and complex business decision-making.</p>
+                    <a href="#" id="request-access-btn" class="case-link">Request Alpha Access <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+     <section id="footer">
+        <footer class="site-footer">
+            <div class="footer-container">
+                <div class="footer-brand">
+                    <h2>E-NovoxTech</h2> 
+                    <p>Building the Future of AI in Africa</p>
+                    <div class="social-icons">
+                        <a href="mailto:info@enovoxtech.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="https://x.com/enovoxtech" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.instagram.com/enovoxtech/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://web.facebook.com/profile.php?id=61577479170693" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://whatsapp.com/channel/0029Vb7dvNkInlqH4pUI6J39" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://github.com/Emmanuelpeter75" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links-group">
+                    <div class="footer-column">
+                        <div class="footer-column">
+    <h3>Company</h3>
+    <a href="about.html">About Us</a>
+    <a href="index.html#join-mission">Careers</a>
+    <a href="contact.html">Reach Out</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms & Conditions</a>
+</div>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Resources</h3>
+                        <a href="https://whatsapp.com/channel/0029Vb7dvNkInlqH4pUI6J39">Community</a>
+                        <a href="blog.html">Blog & Insights</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 E-NovoxTech. All rights reserved.
+            </div>
+        </footer>
+    </section>
+
+    <a href="https://whatsapp.com/channel/0029Vb7dvNkInlqH4pUI6J39" target="_blank" class="whatsapp-float" aria-label="Join our WhatsApp Channel">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <div id="coming-soon-toast" class="toast-hidden">
+    <div class="toast-content">
+        <i class="fa-solid fa-sparkles"></i>
+        <span>This Feature is Coming soon!</span>
+    </div>
+</div>
+
+
+<div id="enovox-ai-container">
+    <div id="enovox-window">
+        <div class="enovox-header">
+    <div class="enovox-brand">
+        <div class="pulse-icon"></div>
+        <div>
+            <strong>Enovox Assistant</strong>
+            <p>Intelligence Core</p>
+        </div>
+    </div>
+    <div class="enovox-actions">
+        <button id="enovox-full-mode" title="Open Full Screen">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </button>
+        <button id="enovox-close" title="Minimize">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+</div>
+        
+        <div id="enovox-messages">
+            <div class="msg bot">Greetings. I am Enovox AI, the digital pulse of E-NovoxTech. How can I assist you with our vision today?</div>
+        </div>
+
+        <div class="enovox-input-bar">
+            <input type="text" id="enovox-input" placeholder="Type a message..." autocomplete="off">
+            <button id="enovox-send">
+                <i class="fa-solid fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+    <button id="enovox-launcher">
+        <i class="fa-solid fa-robot"></i>
+        <span>Chat with our Assistant</span>
+    </button>
+</div>
+
+    <a href="https://whatsapp.com/channel/0029Vb7dvNkInlqH4pUI6J39" target="_blank" class="whatsapp-float" aria-label="Join our WhatsApp Channel">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <div id="coming-soon-toast" style="position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%) translateY(20px); background: #222; border: 1px solid var(--accent-color, #00d4ff); color: #fff; padding: 12px 24px; border-radius: 30px; z-index: 100000; display: none; opacity: 0; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.5);">
+    <div style="display: flex; align-items: center; gap: 10px;">
+        <i class="fa-solid fa-sparkles" style="color: var(--accent-color, #00d4ff);"></i>
+        <strong style="font-size: 0.9rem;">Enovox AI Core is in R&D. Check back soon!</strong>
+    </div>
+</div>
+
+    <div id="enovox-ai-container">
+        </div>
+
+    <script src="theme.js"></script>
+    <script src="script.js"></script>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const accessBtn = document.getElementById('request-access-btn');
+        const toast = document.getElementById('coming-soon-toast');
+
+        if (accessBtn && toast) {
+            accessBtn.addEventListener('click', (e) => {
+                // Stop the page from jumping
+                e.preventDefault(); 
+                
+                // 1. Make it take up space on the screen
+                toast.style.display = 'block';
+                
+                // 2. Wait a tiny fraction of a second, then animate it in
+                setTimeout(() => {
+                    toast.style.opacity = '1';
+                    toast.style.transform = 'translateX(-50%) translateY(0)';
+                }, 10);
+
+                // 3. Hide it after 3 seconds
+                setTimeout(() => {
+                    toast.style.opacity = '0';
+                    toast.style.transform = 'translateX(-50%) translateY(20px)';
+                    
+                    // Wait for fade out to finish before removing it
+                    setTimeout(() => {
+                        toast.style.display = 'none';
+                    }, 300);
+                }, 3000);
+            });
+        } else {
+            console.log("Could not find the button or the toast element.");
+        }
+    });
+</script>
+</html>

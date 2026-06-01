@@ -1,7 +1,18 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://enovoxtech.com/">
+    <meta property="og:title" content="Contact at E-NovoxTech | Building the Future of AI in Africa">
+    <meta property="og:description" content="An elite African AI research and development lab specializing in localized machine learning, intelligent automation, and the Enovox Core infrastructure.">
+    <meta property="og:image" content="https://enovoxtech.com/enovox-preview.jpeg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:domain" content="enovoxtech.com">
+    <meta name="twitter:url" content="https://enovoxtech.com/">
+    <meta name="twitter:title" content="Contact at E-NovoxTech | Building the Future of AI in Africa">
+    <meta name="twitter:description" content="An elite African AI research and development lab specializing in localized machine learning, intelligent automation, and the Enovox Core infrastructure.">
+    <meta name="twitter:image" content="https://enovoxtech.com/enovox-preview.jpeg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script>
@@ -9,9 +20,9 @@
     if (window.location.hostname === "enovoxtech.netlify.app") {
         window.location.replace("https://enovoxtech.com" + window.location.pathname);
     }
-</script>
+    </script>
 
-    <title>Contact - E-NovoxTech</title>
+    <title>Connect With Us - E-NovoxTech</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -19,73 +30,482 @@
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="manifest" href="site.webmanifest">
-    <link rel="canonical" href="https://www.enovoxtech.com/contact.html/" >
+    <link rel="canonical" href="https://www.enovoxtech.com/contact.html" >
+
+    <style>
+        /* Modern Futuristic Wrapper */
+        .ai-contact-section {
+            position: relative;
+            padding: 100px 5%;
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            background: var(--bg-dark, #050505);
+        }
+
+        .contact-container {
+            position: relative;
+            z-index: 2;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        /* Header Section */
+        .contact-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .contact-header h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 15px;
+            background: linear-gradient(to right, #FFFFFF, #00E5FF);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .contact-header p {
+            color: #888888;
+            font-size: 1.15rem;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* Split Layout Grid */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 4fr 5fr;
+            gap: 60px;
+            align-items: start;
+        }
+
+        /* Left Side: Socials */
+        .social-panel {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .social-panel h2 {
+            font-size: 1.5rem;
+            color: #E0E0E0;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .social-card {
+            display: flex;
+            align-items: center;
+            padding: 16px 20px;
+            background: #111111;
+            border: 1px solid #222222;
+            border-radius: 12px;
+            text-decoration: none;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .social-card:hover {
+            transform: translateX(8px);
+            background: rgba(0, 229, 255, 0.05);
+            border-color: #00E5FF;
+            box-shadow: 0 0 20px rgba(0, 229, 255, 0.15);
+        }
+
+        .social-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            background: rgba(0, 229, 255, 0.1);
+            color: #00E5FF;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            margin-right: 18px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-card:hover .social-icon {
+            transform: scale(1.1);
+            background: #00E5FF;
+            color: #050505;
+        }
+
+        .social-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .social-text span:first-child {
+            color: #E0E0E0;
+            font-weight: 600;
+            font-size: 1.05rem;
+            margin-bottom: 3px;
+        }
+
+        .social-text span:last-child {
+            color: #888888;
+            font-size: 0.85rem;
+        }
+
+        /* Right Side: Form / Comm-Link */
+        .form-panel {
+            background: #111111;
+            border: 1px solid #222222;
+            padding: 45px;
+            border-radius: 16px;
+            position: relative;
+        }
+
+        .form-header {
+            margin-bottom: 30px;
+        }
+
+        .form-header h2 {
+            font-size: 1.8rem;
+            color: #E0E0E0;
+            margin-bottom: 8px;
+        }
+
+        .form-header p {
+            color: #888888;
+            font-size: 0.95rem;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #00E5FF;
+            font-weight: 600;
+        }
+
+        .input-group input, 
+        .input-group select, 
+        .input-group textarea {
+            width: 100%;
+            padding: 14px 16px;
+            background: #050505;
+            border: 1px solid #333333;
+            border-radius: 8px;
+            color: #FFFFFF;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .input-group input:focus, 
+        .input-group select:focus, 
+        .input-group textarea:focus {
+            outline: none;
+            border-color: #00E5FF;
+            box-shadow: 0 0 12px rgba(0, 229, 255, 0.2);
+            background: rgba(0, 229, 255, 0.03);
+        }
+
+        /* =========================================
+           FIX: Dropdown Option Menu Contrast
+           ========================================= */
+        .input-group select option {
+            background-color: #111111; /* Forces dropdown background to be dark */
+            color: #FFFFFF; /* Forces text to be white */
+        }
+
+        /* =========================================
+           UNIVERSAL FIX: The Form Button
+           ========================================= */
+        .submit-btn {
+            width: 100%;
+            padding: 16px;
+            margin-top: 10px;
+            background: linear-gradient(135deg, #00E5FF, #0066FF) !important;
+            color: #FFFFFF !important; 
+            border: none !important;
+            border-radius: 8px;
+            font-size: 1.05rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: all 0.3s ease !important;
+            box-shadow: 0 5px 15px rgba(0, 102, 255, 0.3) !important;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            background: linear-gradient(135deg, #33ebff, #3385ff) !important;
+            color: #000000 !important; 
+            box-shadow: 0 10px 25px rgba(0, 229, 255, 0.5) !important;
+        }
+
+        /* Subtle Branding / System Stats */
+        .system-stats {
+            margin-top: 40px;
+            padding-top: 25px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .stat-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #888888;
+            font-size: 0.85rem;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .status-dot-green {
+            width: 8px;
+            height: 8px;
+            background-color: #00FF66;
+            border-radius: 50%;
+            box-shadow: 0 0 8px #00FF66;
+            animation: pulse-green 2s infinite;
+        }
+
+        @keyframes pulse-green {
+            0% { box-shadow: 0 0 0 0 rgba(0, 255, 102, 0.4); }
+            70% { box-shadow: 0 0 0 6px rgba(0, 255, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(0, 255, 102, 0); }
+        }
+
+        .ai-future-tag {
+            font-style: italic;
+            color: rgba(255,255,255,0.3);
+            font-size: 0.8rem;
+            margin-top: 20px;
+        }
+
+        /* LIGHT MODE ADAPTATION */
+        html:not(.dark-mode) .ai-contact-section,
+        body:not(.dark-mode) .ai-contact-section {
+            background: #F8F9FA !important;
+        }
+        
+        html:not(.dark-mode) .contact-header h1,
+        body:not(.dark-mode) .contact-header h1 {
+            background: linear-gradient(to right, #111, #0066FF);
+            -webkit-background-clip: text;
+        }
+
+        html:not(.dark-mode) .social-card,
+        body:not(.dark-mode) .social-card {
+            background: #FFFFFF;
+            border-color: #EAEAEA;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        html:not(.dark-mode) .social-text span:first-child,
+        body:not(.dark-mode) .social-text span:first-child,
+        html:not(.dark-mode) .social-panel h2,
+        body:not(.dark-mode) .social-panel h2,
+        html:not(.dark-mode) .form-header h2,
+        body:not(.dark-mode) .form-header h2 {
+            color: #111111;
+        }
+
+        html:not(.dark-mode) .form-panel,
+        body:not(.dark-mode) .form-panel {
+            background: #FFFFFF;
+            border-color: #EAEAEA;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+        }
+
+        html:not(.dark-mode) .input-group input,
+        body:not(.dark-mode) .input-group input,
+        html:not(.dark-mode) .input-group select,
+        body:not(.dark-mode) .input-group select,
+        html:not(.dark-mode) .input-group textarea,
+        body:not(.dark-mode) .input-group textarea {
+            background: #F8F9FA;
+            border-color: #DDDDDD;
+            color: #111111;
+        }
+
+        /* Dropdown fix for Light Mode */
+        html:not(.dark-mode) .input-group select option,
+        body:not(.dark-mode) .input-group select option {
+            background-color: #FFFFFF;
+            color: #111111;
+        }
+
+        /* Mobile Layout */
+        @media (max-width: 900px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 50px;
+            }
+            .contact-header h1 {
+                font-size: 2.5rem;
+            }
+            .form-panel {
+                padding: 30px 20px;
+            }
+        }
+    </style>
 </head>
 <body>
 
-     <header>
-    <div class="logo">
-        <a href="index.html"><img src="enovoxtechlogo.png" alt="Logo"></a>
-    </div>
-
-    <nav class="desktop-nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="project.html">Project</a>
-        <a href="blog.html">Blog</a>
-        <a href="faq.html">FAQ</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-
-    <div class="header-actions">
-        <a href="#" class="ai-status-btn">Enovox AI <span class="status-dot"></span></a>
-        
-        <button id="theme-btn" class="theme-toggle">
-            <i class="fa-solid fa-moon" id="theme-icon"></i>
-        </button>
-
-        <div class="hamburger">
-            <i class="fa-solid fa-bars"></i>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="enovoxtechlogo.png" alt="Logo"></a>
         </div>
-    </div>
-</header>
+
+        <nav class="desktop-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="product.html">Product</a>
+            <a href="blog.html">Blog</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+            <a href="#" class="ai-status-btn">Enovox AI <span class="status-dot"></span></a>
+            
+            <button id="theme-btn" class="theme-toggle">
+                <i class="fa-solid fa-moon" id="theme-icon"></i>
+            </button>
+
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
 
     <div class="mobile-nav-overlay" id="mobile-nav">
         <div class="close-btn" id="close-btn">&times;</div>
         <div class="mobile-links">
             <a href="index.html" class="nav-link">Home</a>
             <a href="about.html" class="nav-link">About</a>
-            <a href="project.html" class="nav-link">Project</a>
+            <a href="product.html" class="nav-link">Product</a>
             <a href="blog.html" class="nav-link">Blog</a>
             <a href="faq.html" class="nav-link">FAQ</a>
             <a href="contact.html" class="nav-link">Contact</a>
         </div>
     </div>
 
-    <section class="contact-page-section">
+    <section class="ai-contact-section">
         <div class="contact-container reveal">
-            <h1>Get in Touch</h1>
-            <p style="text-align: center;">Ready to build the future? Send us a message.</p>
-            <form action="https://formspree.io/f/xvzrvgeb" method="POST" class="contact-form">
+            
+            <div class="contact-header">
+                <h1>Connect With Us</h1>
+                <p>Whether you're interested in AI innovation, partnerships, development services, or collaboration, E-NovoxTech is always open to meaningful connections.</p>
+            </div>
+
+            <div class="contact-grid">
                 
-                <div class="input-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <div class="social-panel">
+                    <h2>Follow Us On Our Socials</h2>
+                    
+                    <a href="mailto:info@enovoxtech.com" class="social-card">
+                        <div class="social-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="social-text">
+                            <span>Official Inquiries</span>
+                            <span>info@enovoxtech.com</span>
+                        </div>
+                    </a>
+
+                    <a href="https://www.linkedin.com/company/enovoxtech/" target="_blank" class="social-card">
+                        <div class="social-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                        <div class="social-text">
+                            <span>Professional Updates</span>
+                            <span>E-NovoxTech</span>
+                        </div>
+                    </a>
+
+                    <a href="https://www.instagram.com/enovoxtech/" target="_blank" class="social-card">
+                        <div class="social-icon"><i class="fa-brands fa-instagram"></i></div>
+                        <div class="social-text">
+                            <span>Behind the Scenes</span>
+                            <span>@enovoxtech</span>
+                        </div>
+                    </a>
+
+                    <a href="https://x.com/enovoxtech" target="_blank" class="social-card">
+                        <div class="social-icon"><i class="fa-brands fa-x-twitter"></i></div>
+                        <div class="social-text">
+                            <span>AI Insights & News</span>
+                            <span>@enovoxtech</span>
+                        </div>
+                    </a>
+
+                    <a href="https://web.facebook.com/profile.php?id=61577479170693" target="_blank" class="social-card">
+                        <div class="social-icon"><i class="fa-brands fa-facebook-f"></i></div>
+                        <div class="social-text">
+                            <span>Community Updates</span>
+                            <span>E-NovoxTech</span>
+                        </div>
+                    </a>
+
+                    <div class="system-stats">
+                        <div class="stat-item">
+                            <div class="status-dot-green"></div>
+                            System Status: ONLINE
+                        </div>
+                        <div class="stat-item">
+                            <i class="fa-solid fa-bolt" style="color: #00E5FF;"></i>
+                            Avg. Response: &lt; 12 Hours
+                        </div>
+                        <div class="ai-future-tag">Building the Future of AI in Africa</div>
+                    </div>
                 </div>
 
-                <div class="input-group">
-                    <label for="email">Email address</label>
-                    <input type="email" id="phone" name="email" placeholder="someone@gmail.com" required>
+                <div class="form-panel">
+                    <div class="form-header">
+                        <h2>Get in Touch</h2>
+                        <p>Ready to build the future? Send us a message.</p>
+                    </div>
+
+                    <form action="https://formspree.io/f/xvzrvgeb" method="POST" class="contact-form">
+                        <input type="hidden" name="redirect" value="https://enovoxtech.com/success.html">
+                        
+                        <div class="input-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="someone@domain.com" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="mission">Mission Type</label>
+                            <select id="mission" name="mission_type" required>
+                                <option value="" disabled selected>Select an inquiry type...</option>
+                                <option value="AI Innovation">AI Innovation & R&D</option>
+                                <option value="Partnership">Partnerships & Collabs</option>
+                                <option value="Development Services">Development Services</option>
+                                <option value="General Inquiry">General Inquiry</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="message">Tell us more...</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Write your message..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Send message</button>
+
+                    </form>
                 </div>
 
-                <div class="input-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" placeholder="Write your message.." required></textarea>
-                </div>
-
-                <button type="submit" class="submit-btn">Send Message</button>
-
-            </form>
+            </div>
         </div>
     </section>
 
@@ -98,22 +518,21 @@
                     <div class="social-icons">
                         <a href="mailto:info@enovoxtech.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
                         <a href="https://x.com/enovoxtech" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.linkedin.com/company/enovoxtech/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
                         <a href="https://www.instagram.com/enovoxtech/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
                         <a href="https://web.facebook.com/profile.php?id=61577479170693" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
                         <a href="https://whatsapp.com/channel/0029Vb7dvNkInlqH4pUI6J39" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-                        <a href="https://github.com/Emmanuelpeter75" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://github.com/E-NovoxTech" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
                     </div>
                 </div>
                 <div class="footer-links-group">
                     <div class="footer-column">
-                        <div class="footer-column">
-    <h3>Company</h3>
-    <a href="about.html">About Us</a>
-    <a href="index.html#join-mission">Careers</a>
-    <a href="contact.html">Reach Out</a>
-    <a href="privacy.html">Privacy Policy</a>
-    <a href="terms.html">Terms & Conditions</a>
-</div>
+                        <h3>Company</h3>
+                        <a href="about.html">About Us</a>
+                        <a href="careers.html">Careers</a>
+                        <a href="contact.html">Reach Out</a>
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms & Conditions</a>
                     </div>
                     <div class="footer-column">
                         <h3>Resources</h3>
@@ -127,56 +546,58 @@
             </div>
         </footer>
     </section>
+
     <a href="https://whatsapp.com/channel/0029Vb7dvNkInlqH4pUI6J39" target="_blank" class="whatsapp-float" aria-label="Join our WhatsApp Channel">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
-     <div id="coming-soon-toast" class="toast-hidden">
-    <div class="toast-content">
-        <i class="fa-solid fa-sparkles"></i>
-        <span>This Feature is Coming soon!</span>
-    </div>
-</div>
-
-<div id="enovox-ai-container">
-    <div id="enovox-window">
-        <div class="enovox-header">
-    <div class="enovox-brand">
-        <div class="pulse-icon"></div>
-        <div>
-            <strong>Enovox Assistant</strong>
-            <p>Intelligence Core</p>
+    
+    <div id="coming-soon-toast" class="toast-hidden">
+        <div class="toast-content">
+            <i class="fa-solid fa-sparkles"></i>
+            <span>This Feature is Coming soon!</span>
         </div>
     </div>
-    <div class="enovox-actions">
-        <button id="enovox-full-mode" title="Open Full Screen">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+    <div id="enovox-ai-container">
+        <div id="enovox-window">
+            <div class="enovox-header">
+                <div class="enovox-brand">
+                    <div class="pulse-icon"></div>
+                    <div>
+                        <strong>Enovox Assistant</strong>
+                        <p>Intelligence Core</p>
+                    </div>
+                </div>
+                <div class="enovox-actions">
+                    <button id="enovox-full-mode" title="Open Full Screen">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </button>
+                    <button id="enovox-close" title="Minimize">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div id="enovox-messages">
+                <div class="msg bot">Greetings. I am Enovox AI, the digital pulse of E-NovoxTech. How can I assist you with our vision today?</div>
+            </div>
+
+            <div class="enovox-input-bar">
+                <input type="text" id="enovox-input" placeholder="Type a message..." autocomplete="off">
+                <button id="enovox-send">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+
+        <button id="enovox-launcher">
+            <i class="fa-solid fa-robot"></i>
+            <span>Chat with our Assistant</span>
         </button>
-        <button id="enovox-close" title="Minimize">
-            <i class="fa-solid fa-xmark"></i>
-        </button>
     </div>
-</div>
-        
-        <div id="enovox-messages">
-            <div class="msg bot">Greetings. I am Enovox AI, the digital pulse of E-NovoxTech. How can I assist you with our vision today?</div>
-        </div>
-
-        <div class="enovox-input-bar">
-            <input type="text" id="enovox-input" placeholder="Type a message..." autocomplete="off">
-            <button id="enovox-send">
-                <i class="fa-solid fa-paper-plane"></i>
-            </button>
-        </div>
-    </div>
-
-    <button id="enovox-launcher">
-        <i class="fa-solid fa-robot"></i>
-        <span>Chat with our Assistant</span>
-    </button>
-</div>
-
 
     <script src="theme.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
+

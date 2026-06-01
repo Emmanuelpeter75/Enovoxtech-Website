@@ -237,3 +237,34 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+
+/**
+ * E-NovoxTech Core - Careers Page Logic
+ * Handles job selection and UI scrolling.
+ */
+
+function applyForRole(roleName) {
+    // 1. Locate the dropdown menu by its ID
+    const dropdown = document.getElementById('job-role-dropdown');
+    
+    // 2. Change the dropdown's value to match the clicked button
+    if (dropdown) {
+        dropdown.value = roleName;
+    } else {
+        console.error("System Error: Dropdown menu not found.");
+    }
+    
+    // 3. Locate the application form section
+    const formSection = document.getElementById('application-section');
+    
+    // 4. Smoothly scroll the user down to the form
+    if (formSection) {
+        formSection.scrollIntoView({ 
+            behavior: 'smooth',
+            block: 'start'
+        });
+    } else {
+        console.error("System Error: Application section not found.");
+    }
+}

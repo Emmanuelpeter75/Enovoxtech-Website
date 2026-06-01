@@ -1,0 +1,398 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://enovoxtech.com/">
+    <meta property="og:title" content="Careers at E-NovoxTech | Building the Future of AI in Africa">
+    <meta property="og:description" content="An elite African AI research and development lab specializing in localized machine learning, intelligent automation, and the Enovox Core infrastructure.">
+    <meta property="og:image" content="https://enovoxtech.com/enovox-preview.jpeg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:domain" content="enovoxtech.com">
+    <meta name="twitter:url" content="https://enovoxtech.com/">
+    <meta name="twitter:title" content="Careers at E-NovoxTech | Building the Future of AI in Africa">
+    <meta name="twitter:description" content="An elite African AI research and development lab specializing in localized machine learning, intelligent automation, and the Enovox Core infrastructure.">
+    <meta name="twitter:image" content="https://enovoxtech.com/enovox-preview.jpeg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+    // Force redirect from Netlify to the official .com domain
+    if (window.location.hostname === "enovoxtech.netlify.app") {
+        window.location.replace("https://enovoxtech.com" + window.location.pathname);
+    }
+    </script>
+
+    <title>Careers | E-NovoxTech</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="canonical" href="https://www.enovoxtech.com/careers.html">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+        <style>
+        /* =========================================
+           LIGHT MODE OVERRIDES (When Dark Mode is OFF)
+           ========================================= */
+        html:not(.dark-mode) .application-form, 
+        body:not(.dark-mode) .application-form {
+            background-color: transparent !important; 
+        }
+
+        html:not(.dark-mode) .job-card,
+        body:not(.dark-mode) .job-card {
+            background-color: #FFFFFF !important; 
+            border: 1px solid #EAEAEA !important;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08) !important;
+        }
+        
+        html:not(.dark-mode) .job-card h3,
+        body:not(.dark-mode) .job-card h3 {
+            color: #111111 !important;
+        }
+        
+        html:not(.dark-mode) .job-card p,
+        body:not(.dark-mode) .job-card p {
+            color: #555555 !important;
+        }
+
+        html:not(.dark-mode) .job-card:hover,
+        body:not(.dark-mode) .job-card:hover {
+            border-color: #00E5FF !important;
+            box-shadow: 0 10px 25px rgba(0, 229, 255, 0.25) !important;
+        }
+
+        html:not(.dark-mode) .job-card .apply-btn,
+        body:not(.dark-mode) .job-card .apply-btn {
+            border: 1px solid #00E5FF !important;
+            color: #0066FF !important;
+        }
+
+        html:not(.dark-mode) .job-card .apply-btn:hover,
+        body:not(.dark-mode) .job-card .apply-btn:hover {
+            background-color: #00E5FF !important;
+            color: #000000 !important;
+        }
+
+        /* =========================================
+           DARK MODE FIXES (Locking in the Neon)
+           ========================================= */
+        /* 1. Force the Neon Blue border on hover instead of white */
+        html.dark-mode .job-card:hover,
+        body.dark-mode .job-card:hover {
+            border-color: #00E5FF !important;
+            box-shadow: 0 10px 25px rgba(0, 229, 255, 0.2) !important;
+        }
+
+        /* 2. Force the Neon Border on the Apply buttons permanently */
+        html.dark-mode .job-card .apply-btn,
+        body.dark-mode .job-card .apply-btn {
+            border: 1px solid #00E5FF !important;
+            color: #00E5FF !important;
+        }
+
+        html.dark-mode .job-card .apply-btn:hover,
+        body.dark-mode .job-card .apply-btn:hover {
+            background-color: #00E5FF !important;
+            color: #000000 !important; /* Black text so it pops on the neon background */
+        }
+
+        /* =========================================
+           UNIVERSAL FIX: Transmit Application Button
+           ========================================= */
+        /* This guarantees the button NEVER vanishes on hover, regardless of light/dark mode */
+        .submit-btn {
+            border: 1px solid #00E5FF !important;
+            color: #e5eaeb !important;
+            transition: all 0.3s ease !important;
+        }
+
+        .submit-btn:hover {
+            background-color: #00E5FF !important;
+            color: rgb(255, 254, 254) !important; /* Hardcoded black text */
+            border-color: #00E5FF !important;
+        }
+
+        /* =========================================
+           FIX: Dropdown Option Menu Contrast
+           ========================================= */
+        /* Dark Mode (Default) */
+        .application-form select option {
+            background-color: #111111 !important; 
+            color: #FFFFFF !important; 
+        }
+
+        /* Light Mode Override */
+        html:not(.dark-mode) .application-form select option,
+        body:not(.dark-mode) .application-form select option {
+            background-color: #FFFFFF !important;
+            color: #111111 !important;
+        }
+    </style>
+    </style>
+</head>
+<body>
+
+     <header>
+    <div class="logo">
+        <a href="index.html"><img src="enovoxtechlogo.png" alt="Logo"></a>
+    </div>
+
+    <nav class="desktop-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="product.html">Product</a>
+        <a href="blog.html">Blog</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+        <a href="#" class="ai-status-btn">Enovox AI <span class="status-dot"></span></a>
+        
+        <button id="theme-btn" class="theme-toggle">
+            <i class="fa-solid fa-moon" id="theme-icon"></i>
+        </button>
+
+        <div class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+</header>
+
+    <div class="mobile-nav-overlay" id="mobile-nav">
+        <div class="close-btn" id="close-btn">&times;</div>
+        <div class="mobile-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="product.html" class="nav-link">Product</a>
+            <a href="blog.html" class="nav-link">Blog</a>
+            <a href="faq.html" class="nav-link">FAQ</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+    </div>
+
+    <section class="hero">
+        <h1>Build the Future of <span class="highlight">African AI</span> with us</h1>
+        <p>Join E-NovoxTech and help us build AI solutions that solve real African problems. We're looking for passionate people who are ready to learn, grow, and make an impact together. 🚀</p>
+    </section>
+
+<section class="open-roles">
+    <h2>Join Our Team</h2>
+    <p style="text-align: center; color: var(--text-muted); max-width: 700px; margin: 0 auto 40px;">
+        We are currently in the early stages of building E-NovoxTech. These are volunteer collaborator roles for people who are passionate about technology, innovation, and solving African problems with AI. If you're ready to learn, grow, and build something with us, explore the opportunities below. 🚀
+    </p>
+    <div class="roles-grid">
+            
+            <div class="job-card">
+                <div class="role-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+                </div>
+                <h3>AI / ML Engineer</h3>
+                <p>Help us build and improve our AI systems. Work on AI models, data processing, and intelligent features that power E-NovoxTech solutions.</p>
+                <button class="apply-btn" onclick="applyForRole('AI / Machine Learning Engineer')">Apply Now</button>
+            </div>
+
+            <div class="job-card">
+                <div class="role-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+                </div>
+                <h3>Backend Developer</h3>
+                <p>Help us build and maintain the technology behind our products. Work on APIs, backend systems, and the tools that keep our applications running smoothly.</p>
+                <button class="apply-btn" onclick="applyForRole('Backend Developer')">Apply Now</button>
+            </div>
+
+            <div class="job-card">
+                <div class="role-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                </div>
+                <h3>Frontend Developer</h3>
+                <p>Help us create beautiful, user-friendly websites and applications. Turn ideas into smooth, modern experiences that people enjoy using.</p>
+                <button class="apply-btn" onclick="applyForRole('Frontend Developer')">Apply Now</button>
+            </div>
+
+            <div class="job-card">
+                <div class="role-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+                </div>
+                <h3>UI/UX Designer</h3>
+                <p>Help us design simple and intuitive user experiences. Work on layouts, dashboards, and interfaces that make our technology easy and enjoyable to use.</p>
+                <button class="apply-btn" onclick="applyForRole('UI/UX Designer')">Apply Now</button>
+            </div>
+
+            <div class="job-card">
+                <div class="role-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l18-5v12L3 14v-3z"></path><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"></path></svg>
+                </div>
+                <h3>Marketing & Brand Growth</h3>
+                <p>Build the brand voice, grow the community, and push our innovations to the right audience while strengthening awareness and trust across platforms.</p>
+                <button class="apply-btn" onclick="applyForRole('Marketing & Brand Growth')">Apply Now</button>
+            </div>
+
+            <div class="job-card">
+                <div class="role-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                </div>
+                <h3>AI Research / Data Science Engineer</h3>
+                <p>Help collect, clean, and organize local data so our AI stays accurate and useful. Work with us to build strong datasets that power real-world solutions.</p>
+                <button class="apply-btn" onclick="applyForRole('AI Research / Data Science Engineer')">Apply Now</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="application-section" class="application-form">
+        <div class="form-container">
+            <h2>Join the Team of African Innovators</h2>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                
+                <input type="hidden" name="access_key" value="cae457a5-d6cf-4a3e-98a1-717f82b4f718">
+                <input type="hidden" name="redirect" value="https://enovoxtech.com/success.html">
+
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+            <label for="job-role-dropdown">Select Role</label>
+            <select id="job-role-dropdown" name="Role_Applied_For" required>
+                <option value="General Inquiry">Select a Role...</option>
+                <option value="General Inquiry">General Inquiry</option>
+                <option value="AI / Machine Learning Engineer">AI / Machine Learning Engineer</option>
+                <option value="Backend Developer">Backend Developer</option>
+                <option value="Frontend Developer">Frontend Developer</option>
+                <option value="UI/UX Designer">UI/UX Designer</option>
+                <option value="Marketing & Brand Growth">Marketing & Brand Growth</option>
+                <option value="AI Research / Data Science Engineer">AI Research / Data Science Engineer</option>
+            </select>
+        </div>
+                
+                <div class="form-group">
+                    <label for="portfolio">Data Repository (Portfolio/GitHub)</label>
+                    <input type="url" id="portfolio" name="portfolio" placeholder="https://...">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Tell us more...</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Briefly state your qualifications and why you fit this directive..." required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Application</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="footer">
+        <footer class="site-footer">
+            <div class="footer-container">
+                <div class="footer-brand">
+                    <h2>E-NovoxTech</h2> 
+                    <p>Building the Future of AI in Africa</p>
+                    <div class="social-icons">
+                        <a href="mailto:info@enovoxtech.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="https://x.com/enovoxtech" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.linkedin.com/company/enovoxtech/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/enovoxtech/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://web.facebook.com/profile.php?id=61577479170693" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://whatsapp.com/channel/0029Vb7dvNkInlqH4pUI6J39" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://github.com/E-NovoxTech" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links-group">
+                    <div class="footer-column">
+    <h3>Company</h3>
+    <a href="about.html">About Us</a>
+    <a href="careers.html">Careers</a>
+    <a href="contact.html">Reach Out</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms & Conditions</a>
+</div>
+                    <div class="footer-column">
+                        <h3>Resources</h3>
+                        <a href="https://whatsapp.com/channel/0029Vb7dvNkInlqH4pUI6J39">Community</a>
+                        <a href="blog.html">Blog & Insights</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 E-NovoxTech. All rights reserved.
+            </div>
+        </footer>
+    </section>
+     <a href="https://whatsapp.com/channel/0029Vb7dvNkInlqH4pUI6J39" target="_blank" class="whatsapp-float" aria-label="Join our WhatsApp Channel">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+     <div id="coming-soon-toast" class="toast-hidden">
+    <div class="toast-content">
+        <i class="fa-solid fa-sparkles"></i>
+        <span>This Feature is Coming soon!</span>
+    </div>
+</div>
+
+<div id="enovox-ai-container">
+    <div id="enovox-window">
+        <div class="enovox-header">
+    <div class="enovox-brand">
+        <div class="pulse-icon"></div>
+        <div>
+            <strong>Enovox Assistant</strong>
+            <p>Intelligence Core</p>
+        </div>
+    </div>
+    <div class="enovox-actions">
+        <button id="enovox-full-mode" title="Open Full Screen">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </button>
+        <button id="enovox-close" title="Minimize">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+</div>
+        
+        <div id="enovox-messages">
+            <div class="msg bot">Greetings. I am Enovox AI, the digital pulse of E-NovoxTech. How can I assist you with our vision today?</div>
+        </div>
+
+        <div class="enovox-input-bar">
+            <input type="text" id="enovox-input" placeholder="Type a message..." autocomplete="off">
+            <button id="enovox-send">
+                <i class="fa-solid fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+    <button id="enovox-launcher">
+        <i class="fa-solid fa-robot"></i>
+        <span>Chat with our Assistant</span>
+    </button>
+</div>
+
+    <script src="theme.js"></script>
+    <script src="script.js"></script>
+    
+    <script>
+        function applyForRole(roleName) {
+            const dropdown = document.getElementById('job-role-dropdown');
+            if (dropdown) {
+                dropdown.value = roleName;
+            }
+            const formSection = document.getElementById('application-section');
+            if (formSection) {
+                formSection.scrollIntoView({ 
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }
+    </script>
+</body>
+</html>
+

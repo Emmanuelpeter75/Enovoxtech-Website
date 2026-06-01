@@ -1,28 +1,29 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://enovoxtech.com/">
-    <meta property="og:title" content="Social Media & Academic Performance - E-NovoxTech">
-    <meta property="og:description" content="An elite African AI research and development lab specializing in localized machine learning, intelligent automation, and the Enovox Core infrastructure.">
-    <meta property="og:image" content="https://enovoxtech.com/enovox-preview.jpeg">
+    <meta property="og:url" content="https://enovoxtech.com/success.html">
+    <meta property="og:title" content="Transmission Successful | E-NovoxTech">
+    <meta property="og:description" content="Your message has securely entered the E-NovoxTech intelligence core.">
+    <meta property="og:image" content="https://enovoxtech.com/enovox-preview.jpg">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:domain" content="enovoxtech.com">
-    <meta name="twitter:url" content="https://enovoxtech.com/">
-    <meta name="twitter:title" content="Social Media & Academic Performance - E-NovoxTech">
-    <meta name="twitter:description" content="An elite African AI research and development lab specializing in localized machine learning, intelligent automation, and the Enovox Core infrastructure.">
-    <meta name="twitter:image" content="https://enovoxtech.com/enovox-preview.jpeg">
+    <meta name="twitter:url" content="https://enovoxtech.com/success.html">
+    <meta name="twitter:title" content="Transmission Successful | E-NovoxTech">
+    <meta name="twitter:description" content="Your message has securely entered the E-NovoxTech intelligence core.">
+    <meta name="twitter:image" content="https://enovoxtech.com/enovox-preview.jpg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Science: Social Media & Academic Performance - E-NovoxTech</title>
+    <title>Transmission Successful | E-NovoxTech</title>
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="canonical" href="https://enovoxtech.com/social-media-analysis.html" />
+    
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+
     <header>
     <div class="logo">
         <a href="index.html"><img src="enovoxtechlogo.png" alt="Logo"></a>
@@ -62,71 +63,30 @@
         </div>
     </div>
 
-    <section class="article-hero reveal">
-        <div class="article-meta">
-            <span class="category-tag">Data Science</span>
-            <span class="date-tag">January 2026</span>
-        </div>
-        <h1>Analyzing Social Media's Effect on Academic Performance</h1>
-        <p class="article-subtitle">A deep dive into using Python to uncover the hidden correlations between screen time, platform algorithms, and exam scores.</p>
-        
-        <div class="article-hero-image">
-            <img src="student_performance.png" alt="student performance detector model" loading="lazy">
+    <section class="success-page-section" style="text-align: center; padding: 120px 20px; min-height: 60vh; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <div class="success-container reveal">
+            <i class="fa-solid fa-circle-check" style="font-size: 5rem; color: #00d2ff; margin-bottom: 25px; filter: drop-shadow(0 0 20px rgba(0, 210, 255, 0.4));"></i>
+            
+            <h2 style="font-size: 2.5rem; margin-bottom: 15px;">Successful</h2>
+            <p style="font-size: 1.1rem; max-width: 500px; margin: 0 auto 35px auto; color: #a0a0a0; line-height: 1.6;">
+                We have succesfully recived your input. Our team will review it and initiate contact shortly.
+            </p>
+            
+            <a href="#" onclick="window.location.replace(document.referrer || 'index.html'); return false;" style="display: inline-block; padding: 14px 35px; background: linear-gradient(135deg, #00d2ff, #0055ff); color: #ffffff; text-decoration: none; border-radius: 8px; font-weight: 600; box-shadow: 0 4px 15px rgba(0, 85, 255, 0.4); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+    <i class="fa-solid fa-arrow-left" style="margin-right: 8px;"></i> Return to Previous Page
+</a>
         </div>
     </section>
 
-    <main class="article-body reveal">
-        
-        <h2>The Challenge</h2>
-        <p>It is a common assumption that social media negatively impacts academic performance. However, broad assumptions aren't enough when building educational policies or productivity tools. The challenge was to move beyond subjective opinions and use rigorous data science to answer specific questions: At what exact threshold does screen time become toxic to grades? And are all social media hours created equal?</p>
-
-        <h2>Our Approach</h2>
-        <p>To evaluate this, we needed to map out the relationship between digital habits and academic outcomes. We sourced a comprehensive dataset containing variables like daily study hours, specific social media platform usage, sleep duration, and final exam scores.</p>
-        
-        <blockquote class="article-quote">
-            "Data science allows us to replace guesswork with precision. We aren't just looking for a decline in grades; we are looking for the exact behavioral threshold where that decline begins."
-        </blockquote>
-
-        <h2>Data Cleaning & Implementation</h2>
-        <p>Raw data is rarely ready for analysis. The first step was heavy data cleaning using Python's Pandas library to handle missing values and normalize the daily usage metrics. Once the data was structured, we deployed statistical correlation methods to isolate the impact of social media independently of other variables like sleep or baseline intelligence.</p>
-        
-        <div class="code-block-wrapper">
-            <div class="code-header">
-                <span>python</span>
-                <span>correlation_analysis.py</span>
-            </div>
-            <pre><code class="language-python">
-# E-NovoxTech Data Analytics Snippet
-import pandas as pd
-import seaborn as sns
-import matplotlib.pyplot as plt
-
-# Load and clean the student dataset
-df = pd.read_csv('student_habits.csv')
-df.dropna(subset=['social_media_hours', 'exam_score'], inplace=True)
-
-# Calculate Pearson correlation matrix
-correlation = df[['social_media_hours', 'study_hours', 'sleep_hours', 'exam_score']].corr()
-
-# Visualize the threshold where screen time impacts scores
-sns.regplot(x='social_media_hours', y='exam_score', data=df, scatter_kws={'alpha':0.5})
-plt.title('Impact of Daily Social Media on Final Exam Scores')
-plt.show()
-            </code></pre>
-        </div>
-
-        <h2>The Insights Discovered</h2>
-        <p>The visualizations revealed a nuanced reality. The correlation wasn't strictly linear. Usage under 90 minutes a day showed almost zero negative correlation with exam scores. However, a sharp, exponential drop-off in academic performance was identified once a student crossed the 3-hour daily threshold. Furthermore, data showed that late-night usage (after 11 PM) amplified the negative effect by disrupting sleep cycles, proving that <em>when</em> students use social media is just as critical as <em>how long</em> they use it.</p>
-
-        <p>These insights demonstrate the power of applied data science: turning raw, noisy behavioral metrics into clear, actionable intelligence.</p>
-
-    </main>
-
-    <div class="back-nav reveal">
-        <a href="blog.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Back to Insights</a>
+     <div id="coming-soon-toast" class="toast-hidden">
+    <div class="toast-content">
+        <i class="fa-solid fa-sparkles"></i>
+        <span>This Feature is Coming soon!</span>
     </div>
+</div>
 
-    <section id="footer">
+
+<section id="footer">
         <footer class="site-footer">
             <div class="footer-container">
                 <div class="footer-brand">
@@ -145,13 +105,13 @@ plt.show()
                 <div class="footer-links-group">
                     <div class="footer-column">
                         <div class="footer-column">
-    <h3>Company</h3>
-    <a href="about.html">About Us</a>
-    <a href="careers.html">Careers</a>
-    <a href="contact.html">Reach Out</a>
-    <a href="privacy.html">Privacy Policy</a>
-    <a href="terms.html">Terms & Conditions</a>
-</div>
+                                <h3>Company</h3>
+                                <a href="about.html">About Us</a>
+                                <a href="careers.html">Careers</a>
+                                <a href="contact.html">Reach Out</a>
+                                <a href="privacy.html">Privacy Policy</a>
+                                <a href="terms.html">Terms & Conditions</a>
+                        </div>
                     </div>
                     <div class="footer-column">
                         <h3>Resources</h3>
@@ -165,15 +125,18 @@ plt.show()
             </div>
         </footer>
     </section>
+
     <a href="https://whatsapp.com/channel/0029Vb7dvNkInlqH4pUI6J39" target="_blank" class="whatsapp-float" aria-label="Join our WhatsApp Channel">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
-     <div id="coming-soon-toast" class="toast-hidden">
+
+    <div id="coming-soon-toast" class="toast-hidden">
     <div class="toast-content">
         <i class="fa-solid fa-sparkles"></i>
         <span>This Feature is Coming soon!</span>
     </div>
 </div>
+
 
 <div id="enovox-ai-container">
     <div id="enovox-window">
@@ -213,10 +176,7 @@ plt.show()
     </button>
 </div>
 
-
-
     <script src="theme.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
-

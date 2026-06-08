@@ -375,7 +375,7 @@
         </nav>
 
         <div class="header-actions">
-            <a href="#" class="ai-status-btn">Enovox AI <span class="status-dot"></span></a>
+            <a href="waitlist.html" class="ai-status-btn">Enovox AI <span class="status-dot"></span></a>
             
             <button id="theme-btn" class="theme-toggle">
                 <i class="fa-solid fa-moon" id="theme-icon"></i>
@@ -471,38 +471,41 @@
                         <p>Ready to build the future? Send us a message.</p>
                     </div>
 
-                    <form action="https://formspree.io/f/xvzrvgeb" method="POST" class="contact-form">
-                        <input type="hidden" name="redirect" value="https://enovoxtech.com/success.html">
-                        
-                        <div class="input-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-                        </div>
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                            <input type="hidden" name="access_key" value="d98643e4-10b4-4179-8b5e-567065fcf636">
+                            <input type="hidden" name="subject" value="🟢 New Inquiry: E-NovoxTech Contact Portal">
+                            <input type="hidden" name="from_name" value="Enovox Core System">
+                            
+                            <input type="hidden" name="redirect" value="https://enovoxtech.com/success.html">
+                            
+                            <div class="input-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                            </div>
 
-                        <div class="input-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" placeholder="someone@domain.com" required>
-                        </div>
+                            <div class="input-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="someone@domain.com" required>
+                            </div>
 
-                        <div class="input-group">
-                            <label for="mission">Mission Type</label>
-                            <select id="mission" name="mission_type" required>
-                                <option value="" disabled selected>Select an inquiry type...</option>
-                                <option value="AI Innovation">AI Innovation & R&D</option>
-                                <option value="Partnership">Partnerships & Collabs</option>
-                                <option value="Development Services">Development Services</option>
-                                <option value="General Inquiry">General Inquiry</option>
-                            </select>
-                        </div>
+                            <div class="input-group">
+                                <label for="mission">Mission Type</label>
+                                <select id="mission" name="mission_type" required>
+                                    <option value="" disabled selected>Select an inquiry type...</option>
+                                    <option value="AI Innovation">AI Innovation & R&D</option>
+                                    <option value="Partnership">Partnerships & Collabs</option>
+                                    <option value="Development Services">Development Services</option>
+                                    <option value="General Inquiry">General Inquiry</option>
+                                </select>
+                            </div>
 
-                        <div class="input-group">
-                            <label for="message">Tell us more...</label>
-                            <textarea id="message" name="message" rows="4" placeholder="Write your message..." required></textarea>
-                        </div>
+                            <div class="input-group">
+                                <label for="message">Tell us more...</label>
+                                <textarea id="message" name="message" rows="4" placeholder="Write your message..." required></textarea>
+                            </div>
 
-                        <button type="submit" class="submit-btn">Send message</button>
-
-                    </form>
+                            <button type="submit" class="submit-btn">Send message</button>
+                        </form>
                 </div>
 
             </div>

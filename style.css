@@ -1010,7 +1010,9 @@ header:hover{
 }
 
 .waitlist-form button:hover {
-    background: var(--page-text);
+    /* background: var(--page-text); */
+    background-color: #077c9a;
+    color: white;
 }
 
 .careers-btn {

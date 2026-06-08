@@ -2,25 +2,68 @@
 <html lang="en">
 <head>
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://enovoxtech.com/success.html">
-    <meta property="og:title" content="Transmission Successful | E-NovoxTech">
-    <meta property="og:description" content="Your message has securely entered the E-NovoxTech intelligence core.">
+    <meta property="og:url" content="https://enovoxtech.com/ai-success.html">
+    <meta property="og:title" content="Welcome to the Queue | Enovox AI">
+    <meta property="og:description" content="Your email has been securely logged in the Enovox Core.">
     <meta property="og:image" content="https://enovoxtech.com/enovox-preview.jpg">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:domain" content="enovoxtech.com">
-    <meta name="twitter:url" content="https://enovoxtech.com/success.html">
-    <meta name="twitter:title" content="Transmission Successful | E-NovoxTech">
-    <meta name="twitter:description" content="Your message has securely entered the E-NovoxTech intelligence core.">
+    <meta name="twitter:url" content="https://enovoxtech.com/ai-success.html">
+    <meta name="twitter:title" content="Welcome to the Queue | Enovox AI">
+    <meta name="twitter:description" content="Your email has been securely logged in the Enovox Core.">
     <meta name="twitter:image" content="https://enovoxtech.com/enovox-preview.jpg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transmission Successful | E-NovoxTech</title>
+    <title>Welcome to the Queue | Enovox AI</title>
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        .ai-success-section {
+            background-color: #0b0f19; /* Deep dark background matching waitlist */
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .ai-success-container {
+            max-width: 650px;
+            width: 100%;
+        }
+        .ai-success-greeting {
+            color: #ffffff;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin: 20px 0 15px;
+        }
+        .ai-success-subtext {
+            color: #a0aab8;
+            font-size: 1.1rem;
+            margin-bottom: 35px;
+            line-height: 1.6;
+        }
+
+        /* --- LIGHT MODE OVERRIDES --- */
+        body.light-mode .ai-success-section,
+        body.light-theme .ai-success-section {
+            background-color: #f8fafc; 
+        }
+        body.light-mode .ai-success-greeting,
+        body.light-theme .ai-success-greeting {
+            color: #0f172a; 
+        }
+        body.light-mode .ai-success-subtext,
+        body.light-theme .ai-success-subtext {
+            color: #4b5563; 
+        }
+    </style>
 </head>
 <body>
 
@@ -63,30 +106,24 @@
         </div>
     </div>
 
-    <section class="success-page-section" style="text-align: center; padding: 120px 20px; min-height: 60vh; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-        <div class="success-container reveal">
-            <i class="fa-solid fa-circle-check" style="font-size: 5rem; color: #00d2ff; margin-bottom: 25px; filter: drop-shadow(0 0 20px rgba(0, 210, 255, 0.4));"></i>
+    <section class="ai-success-section">
+        <div class="ai-success-container reveal">
+            <i class="fa-solid fa-circle-check" style="font-size: 5rem; color: #00d2ff; margin-bottom: 10px; filter: drop-shadow(0 0 20px rgba(0, 210, 255, 0.4));"></i>
             
-            <h2 style="font-size: 2.5rem; margin-bottom: 15px;">Successful</h2>
-            <p style="font-size: 1.1rem; max-width: 500px; margin: 0 auto 35px auto; color: #a0a0a0; line-height: 1.6;">
-                We have succesfully recived your input. Our team will review it and initiate contact shortly.
+            <h2 class="ai-success-greeting">Welcome to the Queue</h2>
+            <p class="ai-success-subtext">
+                Your email has been securely logged in the Enovox Core. We will initiate contact and grant you access the moment Enovox AI officially launches.
             </p>
             
-            <a href="#" onclick="window.location.replace(document.referrer || 'index.html'); return false;" style="display: inline-block; padding: 14px 35px; background: linear-gradient(135deg, #00d2ff, #0055ff); color: #ffffff; text-decoration: none; border-radius: 8px; font-weight: 600; box-shadow: 0 4px 15px rgba(0, 85, 255, 0.4); transition: transform 0.3s ease, box-shadow 0.3s ease;">
-    <i class="fa-solid fa-arrow-left" style="margin-right: 8px;"></i> Return to Previous Page
-</a>
+            <a href="waitlist.html" style="display: inline-block; padding: 14px 35px; background: linear-gradient(135deg, #00d2ff, #0055ff); color: #ffffff; text-decoration: none; border-radius: 8px; font-weight: 600; box-shadow: 0 4px 15px rgba(0, 85, 255, 0.4); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+                <i class="fa-solid fa-house" style="margin-right: 8px;"></i> Return to Base
+            </a>
         </div>
     </section>
 
-     <div id="coming-soon-toast" class="toast-hidden">
-    <div class="toast-content">
-        <i class="fa-solid fa-sparkles"></i>
-        <span>This Feature is Coming soon!</span>
-    </div>
-</div>
 
 
-<section id="footer">
+    <section id="footer">
         <footer class="site-footer">
             <div class="footer-container">
                 <div class="footer-brand">
@@ -131,50 +168,49 @@
     </a>
 
     <div id="coming-soon-toast" class="toast-hidden">
-    <div class="toast-content">
-        <i class="fa-solid fa-sparkles"></i>
-        <span>This Feature is Coming soon!</span>
-    </div>
-</div>
-
-
-<div id="enovox-ai-container">
-    <div id="enovox-window">
-        <div class="enovox-header">
-    <div class="enovox-brand">
-        <div class="pulse-icon"></div>
-        <div>
-            <strong>Enovox Assistant</strong>
-            <p>Intelligence Core</p>
+        <div class="toast-content">
+            <i class="fa-solid fa-sparkles"></i>
+            <span>This Feature is Coming soon!</span>
         </div>
     </div>
-    <div class="enovox-actions">
-        <button id="enovox-full-mode" title="Open Full Screen">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-        </button>
-        <button id="enovox-close" title="Minimize">
-            <i class="fa-solid fa-xmark"></i>
-        </button>
-    </div>
-</div>
-        
-        <div id="enovox-messages">
-            <div class="msg bot">Greetings. I am Enovox AI, the digital pulse of E-NovoxTech. How can I assist you with our vision today?</div>
-        </div>
 
-        <div class="enovox-input-bar">
-            <input type="text" id="enovox-input" placeholder="Type a message..." autocomplete="off">
-            <button id="enovox-send">
-                <i class="fa-solid fa-paper-plane"></i>
+    <div id="enovox-ai-container">
+        <div id="enovox-window">
+            <div class="enovox-header">
+        <div class="enovox-brand">
+            <div class="pulse-icon"></div>
+            <div>
+                <strong>Enovox Assistant</strong>
+                <p>Intelligence Core</p>
+            </div>
+        </div>
+        <div class="enovox-actions">
+            <button id="enovox-full-mode" title="Open Full Screen">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </button>
+            <button id="enovox-close" title="Minimize">
+                <i class="fa-solid fa-xmark"></i>
             </button>
         </div>
     </div>
+            
+            <div id="enovox-messages">
+                <div class="msg bot">Greetings. I am Enovox AI, the digital pulse of E-NovoxTech. How can I assist you with our vision today?</div>
+            </div>
 
-    <button id="enovox-launcher">
-        <i class="fa-solid fa-robot"></i>
-        <span>Chat with our Assistant</span>
-    </button>
-</div>
+            <div class="enovox-input-bar">
+                <input type="text" id="enovox-input" placeholder="Type a message..." autocomplete="off">
+                <button id="enovox-send">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+
+        <button id="enovox-launcher">
+            <i class="fa-solid fa-robot"></i>
+            <span>Chat with our Assistant</span>
+        </button>
+    </div>
 
     <script src="theme.js"></script>
     <script src="script.js"></script>

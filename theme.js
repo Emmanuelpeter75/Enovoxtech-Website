@@ -54,23 +54,6 @@ faqItems.forEach(item => {
     });
 });
 
-// --- COMING SOON NOTIFICATION LOGIC ---
-const aiButtons = document.querySelectorAll('.ai-status-btn, .ai-glow-btn');
-const toast = document.getElementById('coming-soon-toast');
-
-aiButtons.forEach(button => {
-    button.addEventListener('click', (e) => {
-        e.preventDefault(); // Prevents the page from jumping
-        
-        // Show the toast
-        toast.classList.add('show');
-        
-        // Hide it automatically after 3 seconds
-        setTimeout(() => {
-            toast.classList.remove('show');
-        }, 3000);
-    });
-});
 // --- MOBILE NAV DRAWER LOGIC ---
 document.addEventListener("DOMContentLoaded", () => {
     const hamburger = document.querySelector(".hamburger");

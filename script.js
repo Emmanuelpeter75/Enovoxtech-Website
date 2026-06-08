@@ -43,26 +43,61 @@ const observer = new IntersectionObserver((entries) => {
 
 revealElements.forEach((el) => observer.observe(el));
 
-// 3. NEW: Waitlist Form Interaction
+
+// NEW: Seamless Waitlist Form Interaction (Background Fetch)
 const waitlistForm = document.querySelector('.waitlist-form');
 if (waitlistForm) {
-    waitlistForm.addEventListener('submit', (e) => {
+    waitlistForm.addEventListener('submit', async (e) => {
         e.preventDefault(); // Prevents the page from refreshing
         
         const emailInput = waitlistForm.querySelector('input[type="email"]');
         const btn = waitlistForm.querySelector('button');
-
-        // Visual feedback
         const originalText = btn.innerText;
-        btn.innerText = "Joined!";
-        btn.style.backgroundColor = "#ffffff";
-        emailInput.value = ""; // Clear the input
 
-        // Reset button after 3 seconds
-        setTimeout(() => {
-            btn.innerText = originalText;
-            btn.style.backgroundColor = "#00d4ff";
-        }, 3000);
+        // Visual feedback while sending
+        btn.innerText = "Sending...";
+        btn.style.pointerEvents = "none"; // Freezes the button so hover effects don't trigger
+        
+        // Gather the form data
+        const formData = new FormData(waitlistForm);
+
+        try {
+            // Silently send the data to Web3Forms
+            const response = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                body: formData
+            });
+
+            if (response.ok) {
+                // Success! Show the Joined state
+                btn.innerText = "Joined!";
+                btn.style.backgroundColor = "#00d2ff"; // E-NovoxTech Cyan
+                btn.style.color = "#000000"; // Solid black text for perfect contrast
+                emailInput.value = ""; // Clear the input
+
+                // Reset button after 3 seconds
+                setTimeout(() => {
+                    btn.innerText = originalText;
+                    btn.style.backgroundColor = ""; // Resets to your CSS default
+                    btn.style.color = ""; // Resets to your CSS default
+                    btn.style.pointerEvents = "auto"; // Turns hover effects back on!
+                }, 3000);
+            } else {
+                // Handle server error gracefully
+                btn.innerText = "Try Again";
+                setTimeout(() => {
+                    btn.innerText = originalText;
+                    btn.style.pointerEvents = "auto";
+                }, 3000);
+            }
+        } catch (error) {
+            // Handle network error gracefully
+            btn.innerText = "Network Error";
+            setTimeout(() => {
+                btn.innerText = originalText;
+                btn.style.pointerEvents = "auto";
+            }, 3000);
+        }
     });
 }
 

@@ -839,58 +839,116 @@ header:hover{
 }
 
 /* --- 3. CASE STUDIES / ROI --- */
-.case-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    margin-top: 40px;
+
+/* --- OUR PROGRESS TIMELINE SECTION --- */
+.progress-section {
+    text-align: center;
 }
 
-.case-card {
-    background: var(--gradient-1);
-    padding: 40px;
-    border-radius: 12px;
-    border: 1px solid var(--border-color);
-    transition: 0.3s ease;
+.progress-timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 60px auto 0;
+    padding: 0 20px;
+    text-align: left; /* Aligns text left even though section is centered */
 }
 
-.case-card:hover {
-    transform: translateY(-5px);
-    border-color: var(--accent-color);
+/* The Glowing Vertical Connecting Line */
+.progress-timeline::before {
+    content: '';
+    position: absolute;
+    left: 44px; /* Centers exactly behind the 50px marker icons */
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, rgba(0, 210, 255, 0.8), rgba(0, 210, 255, 0.1));
 }
 
-.case-metric {
-    font-size: 3.5rem;
-    font-weight: 900;
-    color: var(--accent-color);
-    margin-bottom: 10px;
+.timeline-item {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 50px;
+    transition: transform 0.3s ease;
 }
 
-.case-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-    color: var(--page-text);
-    text-align: left;
+.timeline-item:last-child {
+    margin-bottom: 0;
 }
 
-.case-card p {
-    color: var(--text-faint);
-    line-height: 1.6;
-    margin-bottom: 25px;
-    text-align: left;
+.timeline-item:hover {
+    transform: translateX(10px);
 }
 
-.case-link {
-    color: var(--accent-color);
-    font-weight: bold;
-    display: inline-flex;
+.timeline-marker {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    background: #0b0f19; /* Matches site background to hide the line underneath */
+    border: 2px solid #00d2ff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 8px;
+    color: #00d2ff;
+    font-size: 1.2rem;
+    z-index: 2;
+    box-shadow: 0 0 15px rgba(0, 210, 255, 0.2);
+    transition: all 0.3s ease;
 }
 
-.case-link:hover {
-    color: var(--page-text);
+.timeline-item:hover .timeline-marker {
+    background: rgba(0, 210, 255, 0.1);
+    box-shadow: 0 0 25px rgba(0, 210, 255, 0.5);
+    transform: scale(1.1);
 }
+
+.timeline-content {
+    margin-left: 30px;
+    padding-top: 5px; /* Aligns text perfectly with the icon */
+}
+
+.timeline-content h3 {
+    color: #ffffff;
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.timeline-content p {
+    color: #a0aab8;
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+
+/* --- LIGHT MODE OVERRIDES --- */
+body.light-mode .progress-section .section-title p,
+body.light-theme .progress-section .section-title p {
+    color: #4b5563 !important;
+}
+
+body.light-mode .timeline-marker,
+body.light-theme .timeline-marker {
+    background: #f8fafc; /* Matches light mode background */
+}
+
+body.light-mode .timeline-item:hover .timeline-marker,
+body.light-theme .timeline-item:hover .timeline-marker {
+    background: rgba(0, 210, 255, 0.1);
+}
+
+body.light-mode .timeline-content h3,
+body.light-theme .timeline-content h3 {
+    color: #0f172a;
+}
+
+body.light-mode .timeline-content p,
+body.light-theme .timeline-content p {
+    color: #4b5563;
+}
+
+
+
 
 /* --- 4. ABOUT FOUNDER SECTION --- */
 .founder-container {
@@ -1607,48 +1665,88 @@ header:hover{
     opacity: 1;
 }
 /* --- TECH FEATURES SECTION --- */
-.tech-grid {
+
+/* --- WHAT WE ARE BUILDING SECTION --- */
+.build-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    /* This automatically creates a perfect 2x2 grid on desktop, and 1-column on mobile */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
-    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-.tech-card {
+.build-card {
+    background: rgba(255, 255, 255, 0.03); /* Deep glassmorphism */
+    border: 1px solid rgba(0, 210, 255, 0.1);
+    border-radius: 16px;
     padding: 40px 30px;
-    border-radius: 20px;
-    background: var(--card-alt);
-    border: 1px solid var(--border-color);
-    transition: all 0.4s ease;
+    text-align: left;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.tech-card:hover {
-    border-color: var(--accent-color);
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 212, 255, 0.1);
+.build-card:hover {
+    transform: translateY(-5px);
+    border-color: #00d2ff;
+    box-shadow: 0 10px 30px rgba(0, 210, 255, 0.1);
 }
 
-.tech-icon {
-    font-size: 2.5rem;
-    color: var(--accent-color);
-    margin-bottom: 20px;
-    transition: transform 0.3s ease;
+.build-icon-wrapper {
+    display: inline-block;
+    padding: 15px;
+    background: rgba(0, 210, 255, 0.1);
+    border-radius: 12px;
+    margin-bottom: 25px;
 }
 
-.tech-card:hover .tech-icon {
-    transform: scale(1.2) rotate(5deg);
+.build-icon {
+    font-size: 2rem;
+    color: #00d2ff;
 }
 
-.tech-card h3 {
+.build-card h3 {
+    color: #ffffff;
+    font-size: 1.4rem;
     margin-bottom: 15px;
-    font-size: 1.5rem;
+    font-weight: 600;
 }
 
-.tech-card p {
-    color: var(--text-muted);
-    font-size: 0.95rem;
-    line-height: 1.6;
+.build-card p {
+    color: #a0aab8;
+    line-height: 1.7;
+    font-size: 1rem;
 }
+
+/* --- LIGHT MODE OVERRIDES --- */
+body.light-mode .build-card,
+body.light-theme .build-card {
+    background: #ffffff;
+    border-color: rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+body.light-mode .build-card:hover,
+body.light-theme .build-card:hover {
+    border-color: #00d2ff;
+    box-shadow: 0 10px 30px rgba(0, 210, 255, 0.15);
+}
+
+body.light-mode .build-icon-wrapper,
+body.light-theme .build-icon-wrapper {
+    background: rgba(0, 210, 255, 0.15); /* Slightly stronger for light bg */
+}
+
+body.light-mode .build-card h3,
+body.light-theme .build-card h3 {
+    color: #0f172a;
+}
+
+body.light-mode .build-card p,
+body.light-theme .build-card p {
+    color: #4b5563;
+}
+
 
 /* --- COMING SOON TOAST NOTIFICATION --- */
 #coming-soon-toast {
